@@ -1,29 +1,31 @@
 {
-	"name": "Go",
-	"dockerComposeFile": [
-		"../docker-compose.yaml"
-	],
-	"service": "app",
-	"workspaceFolder": "/go/src",
-	"settings": {
-		"go.toolsManagement.checkForUpdates": "off",
-		"go.gopath": "/go",
-		"go.gocodeAutoBuild": true,
-		"go.formatTool": "gofmt",
-		"go.useLanguageServer": true,
-		"editor.formatOnSave": false,
-		"[go]": {
-			"editor.formatOnSave": true
-		}
-	},
-	"extensions": [
-		"ms-ceintl.vscode-language-pack-ja",
-		"golang.Go",
-		"github.github-vscode-theme",
-		"gruntfuggly.todo-tree",
-		"editorconfig.editorconfig",
+  "name": "Go",
+  "dockerComposeFile": [
+    "../docker-compose.yaml"
+  ],
+  "service": "app",
+  "workspaceFolder": "/go/src",
+  "settings": {
+    "go.toolsManagement.checkForUpdates": "off",
+    "go.gopath": "/go",
+    "go.gocodeAutoBuild": true,
+    "go.formatTool": "gofmt",
+    "go.useLanguageServer": true,
+    "editor.formatOnSave": false,
+    "[go]": {
+      "editor.formatOnSave": true
+    }
+  },
+  "extensions": [
+    "ms-ceintl.vscode-language-pack-ja",
+    "golang.Go",
+    "github.github-vscode-theme",
+    "gruntfuggly.todo-tree",
+    "editorconfig.editorconfig",
     "yzhang.markdown-all-in-one",
-		"tabnine.tabnine-vscode"
-	],
-	"features": {}
+    "tabnine.tabnine-vscode",
+    "eamodio.gitlens",
+    "mhutchie.git-graph"
+  ],
+  "features": {}
 }
