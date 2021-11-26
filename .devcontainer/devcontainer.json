@@ -25,7 +25,9 @@
     "yzhang.markdown-all-in-one",
     "tabnine.tabnine-vscode",
     "eamodio.gitlens",
-    "mhutchie.git-graph"
+    "mhutchie.git-graph",
+    "formulahendry.code-runner",
+    "lacroixdavid1.vscode-format-context-menu"
   ],
   "features": {}
 }
