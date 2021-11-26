@@ -1,13 +1,13 @@
 package main
 
-import(
+import (
 	"fmt"
 )
 
 //　型
 // 文字列型
 
-func main(){
+func main() {
 	var s string = "Hello Golang"
 	fmt.Println(s)
 	fmt.Printf("%T\n", s)
@@ -29,4 +29,4 @@ func main(){
 	// stringはbyte型
 	// 文字列はbyte配列のあつまり
 	fmt.Println(string(s[0]))
-	}
+}
