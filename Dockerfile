@@ -8,7 +8,8 @@ RUN apt update; \
         jq \
         vim \
         locales \
-        sqlite3
+        sqlite3 \
+        postgresql-client
 
 RUN sed -i -E 's/# (ja_JP.UTF-8)/\1/' /etc/locale.gen; \
     locale-gen

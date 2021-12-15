@@ -9,3 +9,27 @@ services:
       - .:/go/src
       - ~/.gitignore:/root/.gitignore
       - ~/.gitignore_global:/root/.gitignore_global
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: password
+      TZ: "Asia/Tokyo"
+    ports:
+      - 5432:5432
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    ports:
+      - 81:80
+    environment:
+      PGADMIN_DEFAULT_EMAIL: info@example.com
+      PGADMIN_DEFAULT_PASSWORD: password
+    volumes:
+      - ./pgadmin:/var/lib/pgadmin
+    depends_on:
+      - postgres
